@@ -1,0 +1,35 @@
+.statistics{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    border: 1px solid #ccc;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+}
+
+.label{
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,23 @@
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse
+}
+
+.stats_li{
+    margin-right: 15px;
+}
+
+.label{
+margin-right: 5px;
+}
+
+.quantity{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F87719;
+}

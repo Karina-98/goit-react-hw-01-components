@@ -1,0 +1,26 @@
+.transaction_history{
+    background-color: #fff;
+    width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    border: 1px solid black;
+}
+
+.items{
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #499fc4;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.body_items{
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}

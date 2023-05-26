@@ -1,0 +1,37 @@
+.item {
+  display: flex;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 250px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 15px;
+  border-radius: 10%;
+  border-block: inherit;
+  border-block-color: black;
+  background-color: rgb(210, 233, 84);
+}
+
+.friend_list {
+  width: auto;
+  margin-right: 25px;
+}
+
+.name {
+  font-family: 'Roboto';
+  font-style: normal;
+  
+}
