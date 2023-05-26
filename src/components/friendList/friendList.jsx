@@ -1,4 +1,5 @@
 import css from './friendList.module.css'
+import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   console.log(friends);
@@ -16,3 +17,10 @@ export const FriendList = ({ friends }) => {
     </section>
   );
 };
+
+FriendList.prototype = {
+    avatar: PropTypes.img,
+    id: PropTypes.string,
+    isOnline: PropTypes.bool,
+    name: PropTypes.string,
+}

@@ -1,4 +1,5 @@
 import css from './TransactionHistory.module.css'
+import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({items}) => {
 console.log(items)
@@ -23,4 +24,10 @@ console.log(items)
     
   </table> 
   </section>
+}
+
+TransactionHistory.prototype = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
 }
