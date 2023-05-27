@@ -1,16 +1,13 @@
 
-// import { Description } from 'components/description/description'
-// import user from './data/user.json';
-// import { Stats } from 'components/stats/stats'
-import user from './data/user.json';
-import { Profile } from './profile/profile';
-import { FriendList } from './friendList/friendList';
+import { Profile } from './Profile/Profile';
+import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Statistics } from './Statistics/Statistics';
 
-import { Statistics } from './statistics/statistics';
-import data from './data/data.json'
-import friends from './data/friends.json'
-import transactions from './data/transactions.json'
+import data from '../data/data.json';
+import user from '../data/user.json';
+import friends from '../data/friends.json'
+import transactions from '../data/transactions.json'
 
 
 import css from'./style.module.css'

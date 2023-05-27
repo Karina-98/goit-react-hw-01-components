@@ -1,17 +1,18 @@
-import css from './TransactionHistory.module.css'
+import css from './TransactionHistory.module.css';
 import PropTypes from 'prop-types';
 
-export const TransactionHistory = ({items}) => {
-console.log(items)
-    return <section><table className={css.transaction_history}>
-            <thead className={css.items}>
-            <tr>
-              <th className={css.body_items}>Type</th>
-              <th className={css.body_items}>Amount</th>
-              <th className={css.body_items}>Currency</th>
-            </tr>
-          </thead>
-          {items.map(({id, type, amount, currency}) =>(
+export const TransactionHistory = ({ items }) => {
+  return (
+    <section>
+      <table className={css.transaction_history}>
+        <thead className={css.items}>
+          <tr>
+            <th className={css.body_items}>Type</th>
+            <th className={css.body_items}>Amount</th>
+            <th className={css.body_items}>Currency</th>
+          </tr>
+        </thead>
+        {items.map(({ id, type, amount, currency }) => (
           <tbody key={id} className={css.body_items}>
             <tr className={css.body_items}>
               <td className={css.body_items}>{type}</td>
@@ -19,15 +20,17 @@ console.log(items)
               <td className={css.body_items}>{currency}</td>
             </tr>
           </tbody>
-           
         ))}
-    
-  </table> 
-  </section>
-}
+      </table>
+    </section>
+  );
+};
 
 TransactionHistory.prototype = {
-  type: PropTypes.string,
-  amount: PropTypes.number,
-  currency: PropTypes.string,
-}
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired,
+  })).isRequired,
+};

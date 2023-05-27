@@ -1,9 +1,8 @@
-import css from './statistics.module.css';
-import { getRandomHexColor } from 'components/randomColor/randomColor';
+import css from './Statistics.module.css';
+import { getRandomHexColor } from 'helpers/randomColor/randomColor';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, data }) => {
-  console.log(data);
   return (
     <>
       <section className={css.statistics}>
@@ -31,8 +30,11 @@ export const Statistics = ({ title, data }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
-  id: PropTypes.string,
-  label: PropTypes.string,
-  parent: PropTypes.string,
+  data: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };

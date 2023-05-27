@@ -1,8 +1,7 @@
-import css from './friendList.module.css'
+import css from './FriendList.module.css'
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
-  console.log(friends);
   return (
     <section>
       <ul className={css.friend_list}>
@@ -19,8 +18,10 @@ export const FriendList = ({ friends }) => {
 };
 
 FriendList.prototype = {
-    avatar: PropTypes.img,
-    id: PropTypes.string,
-    isOnline: PropTypes.bool,
-    name: PropTypes.string,
+  friends: PropTypes.arrayOf(PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired)
 }
