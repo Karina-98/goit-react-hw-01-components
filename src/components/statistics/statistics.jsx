@@ -38,3 +38,4 @@ Statistics.propTypes = {
     })
   ).isRequired,
 };
+  
